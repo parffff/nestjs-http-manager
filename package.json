@@ -1,0 +1,18 @@
+{
+  "name": "nestjs-http-manager",
+  "version": "0.1.1",
+  "author": "byteflowstudio",
+  "description": "Обертка над http-модулем с использованием реактивного программирования и отловом ошибок для nestjs",
+  "main": "src/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@nestjs/axios": "latest",
+    "@nestjs/common": "latest",
+    "axios": "latest",
+    "rxjs": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "ts-node": "latest"
+  }
+}
