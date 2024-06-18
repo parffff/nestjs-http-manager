@@ -13,6 +13,7 @@ yarn-error.log*
 
 # lock file
 yarn.lock
+tsconfig.lib.tsbuildinfo
 
 # Secret service keys
 src/keys/*
