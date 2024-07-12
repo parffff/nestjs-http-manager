@@ -30,7 +30,7 @@ export class HttpManagerService {
     const { data } = await firstValueFrom(
       this.httpService.get<T>(path, { headers: options.headers }).pipe(
         catchError((error: AxiosError) => {
-          throw new HttpException(error.message, error.status)
+          throw new HttpException(error.response.data, error.response.status)
         })
       )
     )
@@ -51,7 +51,7 @@ export class HttpManagerService {
           })
         }),
         catchError((error: AxiosError) => {
-          throw new HttpException(error.message, error.status)
+          throw new HttpException(error.response.data, error.response.status)
         })
       )
   }
@@ -65,7 +65,7 @@ export class HttpManagerService {
     const { data } = await firstValueFrom(
       this.httpService.post<T>(path, options.data, { headers: options.headers }).pipe(
         catchError((error: AxiosError) => {
-          throw new HttpException(error.message, error.status)
+          throw new HttpException(error.response.data, error.response.status)
         })
       )
     )
