@@ -6,6 +6,12 @@ export type GetRequestOpt = {
   headers?: AxiosHeaders
 }
 
+/** Дополнительные опции GET запроса */
+export type HeadRequestOpt = {
+  /** Необязательно. Заголовки запроса */
+  headers?: AxiosHeaders
+}
+
 /** Дополнительные опции POST запроса */
 export type PostRequestOpt<D> = {
   /** Необязательно. Тело запроса */

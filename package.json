@@ -1,6 +1,6 @@
 {
   "name": "nestjs-http-manager",
-  "version": "0.1.6",
+  "version": "0.1.11",
   "author": "byteflowstudio",
   "description": "Обертка над http-модулем с использованием реактивного программирования и отловом ошибок для nestjs",
   "license": "MIT",
